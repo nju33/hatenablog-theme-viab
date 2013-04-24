@@ -1,0 +1,538 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+a:hover {
+  color: #958679; }
+
+.entry ul, ol {
+  margin-left: 1.5em; }
+
+.entry ul {
+  list-style: disc; }
+.entry ul ul {
+  list-style: circle; }
+
+ol {
+  list-style: decimal; }
+
+dd {
+  margin-left: 1.5em; }
+
+table {
+  margin: 1em 0; }
+
+tr {
+  border-bottom: 1px dashed #c2c2c2; }
+
+tr:nth-child(n+2) {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+tr:nth-child(n+2):hover {
+  background-color: #ebebeb; }
+
+tr:first-child, tr:last-child {
+  border-bottom: 2px solid #9acde7; }
+
+th {
+  color: #64b2da; }
+
+th, td {
+  width: 8em;
+  text-indent: 1em; }
+
+pre {
+  background-color: #464646;
+  color: #c2c2c2; }
+
+blockquote {
+  position: relative; }
+blockquote:before {
+  content: "”";
+  z-index: -1;
+  font-size: 7.5em;
+  position: absolute;
+  top: -0.49em;
+  left: 0;
+  color: #f0f0f0; }
+
+cite {
+  text-align: right;
+  display: block; }
+
+body {
+  font-size: 15px;
+  font-family: "Lucida Grande", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #5b5048;
+  background-color: #f8f8f8;
+  letter-spacing: 0.05em;
+  position: relative; }
+
+.clearfix, .hatena-asin-detail, .page-index #box2, .search-form, .page-entry #box2-inner, .page-archive #box2-inner, .page-about #box2-inner {
+  *zoom: 1; }
+.clearfix:before, .hatena-asin-detail:before, .page-index #box2:before, .search-form:before, .page-entry #box2-inner:before, .page-archive #box2-inner:before, .page-about #box2-inner:before, .clearfix:after, .hatena-asin-detail:after, .page-index #box2:after, .search-form:after, .page-entry #box2-inner:after, .page-archive #box2-inner:after, .page-about #box2-inner:after {
+  content: "";
+  display: table; }
+.clearfix:after, .hatena-asin-detail:after, .page-index #box2:after, .search-form:after, .page-entry #box2-inner:after, .page-archive #box2-inner:after, .page-about #box2-inner:after {
+  clear: both; }
+
+.title_hover, .page-index #blog-title-inner, .page-entry #blog-title-inner, .page-archive #blog-title-inner, .page-about #blog-title-inner {
+  opacity: 0.55;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+.title_hover:hover, .page-index #blog-title-inner:hover, .page-entry #blog-title-inner:hover, .page-archive #blog-title-inner:hover, .page-about #blog-title-inner:hover {
+  opacity: 1; }
+
+.wrap_contents, pre, blockquote, .hatena-asin-detail, .entry-comment {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #c2c2c2; }
+
+.btn-hover, .leave-comment-title, .pager a {
+  height: 2.1em;
+  line-height: 2.4;
+  border-top: 1px solid transparent;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out; }
+.btn-hover:hover, .leave-comment-title:hover, .pager a:hover {
+  background-color: #ebebeb;
+  border-top: 1px solid #e4e4e4; }
+
+.page-index .entry h1 {
+  font-size: 1.55em; }
+.page-index .entry h2 {
+  font-size: 1.34em; }
+.page-index .entry h3 {
+  font-size: 1.21em; }
+.page-index .entry h4 {
+  font-size: 1.13em; }
+.page-index .entry h5 {
+  font-size: 1.08em; }
+.page-index .entry h6 {
+  font-size: 1.05em; }
+
+.page-entry .entry {
+  margin-top: 3em;
+  font-size: 1.2em; }
+.page-entry .entry h1 {
+  font-size: 2.1em; }
+.page-entry .entry h2 {
+  font-size: 1.8em; }
+.page-entry .entry h3 {
+  font-size: 1.6em; }
+.page-entry .entry h4 {
+  font-size: 1.4em; }
+.page-entry .entry h5 {
+  font-size: 1.3em; }
+.page-entry .entry h6 {
+  font-size: 1.2em; }
+.page-entry .entry .entry-content {
+  font-size: 1.15em; }
+
+.entry:not(:last-of-type) {
+  margin-bottom: 5em; }
+
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+  .page-index #globalheader-container {
+    background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png") top right repeat-y;
+    padding-right: 220px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+
+.page-index #container {
+  position: relative; }
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+  .page-index #container {
+    background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png") top right repeat-y; } }
+
+.page-index #container-inner {
+  padding-top: 8em; }
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+  .page-index #container-inner {
+    width: 960px;
+    margin: 0 auto; } }
+
+.page-index #blog-title {
+  position: absolute;
+  top: -10em; }
+.page-index #blog-title-inner {
+  margin: 0 1em;
+  position: fixed;
+  top: 10.3em;
+  width: 180px;
+  z-index: 1; }
+
+.page-entry #blog-title-inner, .page-archive #blog-title-inner, .page-about #blog-title-inner {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 3em; }
+.page-entry #wrapper, .page-archive #wrapper, .page-about #wrapper {
+  width: 960px;
+  margin: 1em auto 3em;
+  line-height: 1.9; }
+
+.page-archive #wrapper, .page-about #wrapper {
+  font-size: 1.2em; }
+
+.page-archive #main-inner > p {
+  margin-top: 2em;
+  font-size: 1.2em; }
+.page-archive #main-inner > p + .autopagerize_page_element {
+  margin-top: 1em; }
+
+.page-archive .autopagerize_page_element h1 {
+  font-size: 1.34em; }
+.page-archive .autopagerize_page_element ul {
+  margin-left: 1.5em;
+  font-size: 0.85em; }
+.page-archive .autopagerize_page_element li {
+  border-left: 2px solid #9acde7;
+  margin-bottom: 1em;
+  padding-left: 1em; }
+.page-archive .autopagerize_page_element .categories {
+  display: block;
+  display: block;
+  width: 100%; }
+.page-archive .autopagerize_page_element .categories a:before {
+  content: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063132.png");
+  margin-right: 0.1em; }
+
+.page-archive #top-box {
+  width: 960px;
+  margin: 3em auto 0; }
+.page-archive #top-box a {
+  color: #9acde7; }
+
+#title, #blog-description {
+  word-wrap: break-word;
+  word-break: break-all; }
+
+#title {
+  font-size: 1.55em;
+  line-height: 1.7; }
+
+#blog-description {
+  font-size: 0.85em;
+  line-height: 1.5; }
+
+.page-index #wrapper {
+  display: block;
+  width: 57.14286%;
+  margin-left: 21.42857%;
+  margin-right: 21.42857%;
+  line-height: 1.9; }
+
+.entry {
+  position: relative; }
+
+.entry-header {
+  margin-bottom: 1.5em;
+  position: relative;
+  border-left: 2px solid #9acde7;
+  padding-left: 1em; }
+
+.date, .categories {
+  font-size: 0.85em; }
+
+.date:before {
+  content: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063129.png");
+  margin-right: 0.1em; }
+
+.hyphen {
+  font-size: 0.85em; }
+
+.page-index .categories, .page-entry .categories {
+  position: absolute;
+  top: 0;
+  left: 11em; }
+.page-index .categories a:before, .page-entry .categories a:before {
+  content: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063132.png");
+  margin-right: 0.1em; }
+
+.entry-header-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3em;
+  height: 100%;
+  background-color: #9acde7;
+  text-align: center; }
+.entry-header-menu a {
+  color: #f8f8f8;
+  padding: 1em 0; }
+
+.entry-content a {
+  color: #64b2da; }
+.entry-content a:hover {
+  color: #9acde7; }
+.entry-content a.keyword {
+  color: inherit; }
+.entry-content a.keyword:hover {
+  border-bottom: 2px dashed #9acde7; }
+.entry-content p {
+  margin: 1em 0;
+  text-indent: 1em; }
+
+img.hatena-fotolife, .magnifiable {
+  max-width: 100% !important;
+  display: block; }
+
+img.hatena-image-left, img.hatena-image-right {
+  width: 40%; }
+
+.hatena-asin-detail-info {
+  display: inline;
+  float: left;
+  width: 70%; }
+.hatena-asin-detail-info ul {
+  list-style: none;
+  font-size: 0.9em; }
+
+.hatena-asin-detail > a {
+  display: inline;
+  float: left;
+  width: 30%;
+  text-align: center; }
+
+.entry .hatena-asin-detail .hatena-asin-detail-image {
+  float: none;
+  margin: 0; }
+
+.comment-box .comment {
+  list-style: none;
+  margin: 0; }
+
+.comment-user-name {
+  border-bottom: 1px dashed #c2c2c2;
+  margin-bottom: 1em; }
+.comment-user-name a {
+  color: #9acde7; }
+.comment-user-name a:hover {
+  color: #64b2da; }
+
+.comment-content {
+  margin-left: 1.5em; }
+
+.comment-metadata {
+  text-align: right; }
+
+.leave-comment-title {
+  padding: 0 0.5em; }
+
+.pager {
+  padding: 1.5em 0;
+  text-align: center; }
+.pager a {
+  display: block;
+  width: 100%; }
+
+.page-entry .pager {
+  font-size: 1.15em; }
+
+.page-index #box2 {
+  color: #c2c2c2;
+  font-size: 0.85em;
+  line-height: 2.1; }
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+  .page-index #box2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 207px;
+    padding-left: 1em;
+    height: 100%;
+    background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png") top right repeat-y; } }
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .page-index #box2 {
+    position: relative;
+    background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png");
+    z-index: 2; } }
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+  .page-index #box2-inner {
+    padding-top: 8em; } }
+
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .hatena-module:nth-child(4n + 1) {
+    clear: both; } }
+
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .hatena-module {
+    display: inline;
+    float: left;
+    width: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 1em; } }
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+  .hatena-module {
+    margin-bottom: 2em; } }
+.hatena-module ul a {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  display: block;
+  font-size: 0.85em; }
+.hatena-module ul a:hover {
+  background-color: #a1a1a1; }
+
+.hatena-module-title {
+  font-size: 1.2em;
+  border-bottom: 1px dashed #a1a1a1;
+  text-indent: 0.5em;
+  margin-bottom: 0.5em; }
+
+.hatena-module-profile {
+  position: relative; }
+
+.profile-description {
+  position: absolute;
+  top: 3.1em;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063136.png");
+  width: 8em;
+  height: 5em;
+  padding-left: 0.5em; }
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+  .profile-description {
+    left: 6.5em; } }
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .profile-description {
+    left: 7.5em; } }
+.profile-description:before {
+  content: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063135.png");
+  position: absolute;
+  top: 0.5em;
+  left: -0.74em; }
+.profile-description p {
+  font-size: 0.85em;
+  line-height: 1.7;
+  padding-top: 0.3em; }
+
+.id {
+  position: relative;
+  top: 1.3em;
+  right: 5em; }
+
+.hatena-module .btn-subscribe {
+  margin-top: 2em; }
+
+.search-module-input, .search-module-button {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 2em;
+  line-height: 2; }
+
+.search-module-input {
+  display: inline;
+  float: left;
+  width: 71.42857%;
+  text-indent: 0.5em;
+  outline-width: 2px;
+  outline-color: #a1a1a1;
+  border: none;
+  background-color: transparent;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: #5b5048; }
+.search-module-input:focus {
+  background-color: #f8f8f8; }
+
+.search-module-button {
+  display: inline;
+  float: left;
+  width: 21.42857%;
+  margin-right: 7.14286%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063130.png") 34% no-repeat;
+  border: none; }
+.search-module-button:hover {
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063131.png") 34% no-repeat; }
+
+.page-entry, .page-archive, .page-about {
+  display: block;
+  width: 100%; }
+.page-entry #box2, .page-archive #box2, .page-about #box2 {
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png"); }
+.page-entry #box2-inner, .page-archive #box2-inner, .page-about #box2-inner {
+  width: 960px;
+  margin: 0 auto;
+  color: #c2c2c2;
+  line-height: 2.1; }
+.page-entry .hatena-module, .page-archive .hatena-module, .page-about .hatena-module {
+  display: inline;
+  float: left;
+  width: 25%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 1em; }
+.page-entry .hatena-module:nth-child(4n + 1), .page-archive .hatena-module:nth-child(4n + 1), .page-about .hatena-module:nth-child(4n + 1) {
+  clear: both; }
+.page-entry .profile-description, .page-archive .profile-description, .page-about .profile-description {
+  height: 4.3em; }
+.page-entry .profile-description:before, .page-archive .profile-description:before, .page-about .profile-description:before {
+  left: -0.63em; }
+
+.page-index #footer {
+  text-align: center;
+  line-height: 1.5; }
+@media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
+  .page-index #footer {
+    background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png") top right repeat-y; } }
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+  .page-index #footer {
+    background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png");
+    color: #c2c2c2; } }
+
+.page-entry #footer, .page-archive #footer, .page-about #footer {
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png");
+  color: #c2c2c2;
+  line-height: 1.5;
+  text-align: center; }
