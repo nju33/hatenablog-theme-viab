@@ -40,17 +40,6 @@ a {
 a:hover {
   color: #958679; }
 
-.entry ul, ol {
-  margin-left: 1.5em; }
-
-.entry ul {
-  list-style: disc; }
-.entry ul ul {
-  list-style: circle; }
-
-ol {
-  list-style: decimal; }
-
 dd {
   margin-left: 1.5em; }
 
@@ -58,15 +47,7 @@ table {
   margin: 1em 0; }
 
 tr {
-  border-bottom: 1px dashed #c2c2c2; }
-
-tr:nth-child(n+2) {
-  -webkit-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out; }
-tr:nth-child(n+2):hover {
-  background-color: #ebebeb; }
+  border-bottom: 2px dashed #c2c2c2; }
 
 tr:first-child, tr:last-child {
   border-bottom: 2px solid #9acde7; }
@@ -127,7 +108,7 @@ body {
   padding: 1em;
   border: 1px solid #c2c2c2; }
 
-.btn-hover, .leave-comment-title, .pager a {
+.btn_hover, tr:nth-child(n+2), .leave-comment-title, .pager a {
   height: 2.1em;
   line-height: 2.4;
   border-top: 1px solid transparent;
@@ -135,9 +116,17 @@ body {
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
-.btn-hover:hover, .leave-comment-title:hover, .pager a:hover {
+.btn_hover:hover, tr:hover:nth-child(n+2), .leave-comment-title:hover, .pager a:hover {
   background-color: #ebebeb;
   border-top: 1px solid #e4e4e4; }
+
+.accent_link, .page-archive #top-box a, .entry-content a, .comment-user-name a {
+  color: #64b2da; }
+.accent_link:hover, .page-archive #top-box a:hover, .entry-content a:hover, .comment-user-name a:hover {
+  color: #9acde7; }
+
+.side_bottom_wall, .page-entry #box2, .page-archive #box2, .page-about #box2, .page-entry #footer, .page-archive #footer, .page-about #footer {
+  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png"); }
 
 .page-index .entry h1 {
   font-size: 1.55em; }
@@ -242,8 +231,6 @@ body {
 .page-archive #top-box {
   width: 960px;
   margin: 3em auto 0; }
-.page-archive #top-box a {
-  color: #9acde7; }
 
 #title, #blog-description {
   word-wrap: break-word;
@@ -303,10 +290,6 @@ body {
   color: #f8f8f8;
   padding: 1em 0; }
 
-.entry-content a {
-  color: #64b2da; }
-.entry-content a:hover {
-  color: #9acde7; }
 .entry-content a.keyword {
   color: inherit; }
 .entry-content a.keyword:hover {
@@ -314,6 +297,14 @@ body {
 .entry-content p {
   margin: 1em 0;
   text-indent: 1em; }
+.entry-content ul, .entry-content ol {
+  margin-left: 1.5em; }
+.entry-content ul {
+  list-style: disc; }
+.entry-content ul ul {
+  list-style: circle; }
+.entry-content ol {
+  list-style: decimal; }
 
 img.hatena-fotolife, .magnifiable {
   max-width: 100% !important;
@@ -340,17 +331,9 @@ img.hatena-image-left, img.hatena-image-right {
   float: none;
   margin: 0; }
 
-.comment-box .comment {
-  list-style: none;
-  margin: 0; }
-
 .comment-user-name {
   border-bottom: 1px dashed #c2c2c2;
   margin-bottom: 1em; }
-.comment-user-name a {
-  color: #9acde7; }
-.comment-user-name a:hover {
-  color: #64b2da; }
 
 .comment-content {
   margin-left: 1.5em; }
@@ -498,8 +481,6 @@ img.hatena-image-left, img.hatena-image-right {
 .page-entry, .page-archive, .page-about {
   display: block;
   width: 100%; }
-.page-entry #box2, .page-archive #box2, .page-about #box2 {
-  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png"); }
 .page-entry #box2-inner, .page-archive #box2-inner, .page-about #box2-inner {
   width: 960px;
   margin: 0 auto;
@@ -520,9 +501,10 @@ img.hatena-image-left, img.hatena-image-right {
 .page-entry .profile-description:before, .page-archive .profile-description:before, .page-about .profile-description:before {
   left: -0.63em; }
 
-.page-index #footer {
+#footer {
   text-align: center;
   line-height: 1.5; }
+
 @media only screen and (min-width: 1025px) and (min-device-width: 1025px) {
   .page-index #footer {
     background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png") top right repeat-y; } }
@@ -532,7 +514,4 @@ img.hatena-image-left, img.hatena-image-right {
     color: #c2c2c2; } }
 
 .page-entry #footer, .page-archive #footer, .page-about #footer {
-  background: url("http://img.f.hatena.ne.jp/images/fotolife/t/totora0155/20130424/20130424063134.png");
-  color: #c2c2c2;
-  line-height: 1.5;
-  text-align: center; }
+  color: #c2c2c2; }
