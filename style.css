@@ -94,12 +94,14 @@ body {
 .clearfix:after, .hatena-asin-detail:after, .page-index #box2:after, .search-form:after, .page-entry #box2-inner:after, [class^="page-a"] #box2-inner:after {
   clear: both; }
 
-.title_hover, .page-index #blog-title-inner, .page-entry #blog-title-inner, [class^="page-a"] #blog-title-inner {
-  opacity: 0.55;
+.transition_02s, .title_hover, .page-index #blog-title-inner, .page-entry #blog-title-inner, [class^="page-a"] #blog-title-inner, .btn_hover, tr:nth-child(n+2), .leave-comment-title, .pager a, .search-module-input {
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out; }
+
+.title_hover, .page-index #blog-title-inner, .page-entry #blog-title-inner, [class^="page-a"] #blog-title-inner {
+  opacity: 0.55; }
 .title_hover:hover, .page-index #blog-title-inner:hover, .page-entry #blog-title-inner:hover, [class^="page-a"] #blog-title-inner:hover {
   opacity: 1; }
 
@@ -111,11 +113,7 @@ body {
 .btn_hover, tr:nth-child(n+2), .leave-comment-title, .pager a {
   height: 2.1em;
   line-height: 2.4;
-  border-top: 1px solid transparent;
-  -webkit-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out; }
+  border-top: 1px solid transparent; }
 .btn_hover:hover, tr:hover:nth-child(n+2), .leave-comment-title:hover, .pager a:hover {
   background-color: #ebebeb;
   border-top: 1px solid #e4e4e4; }
@@ -456,10 +454,6 @@ img.hatena-image-left, img.hatena-image-right {
   outline-color: #a1a1a1;
   border: none;
   background-color: transparent;
-  -webkit-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
   color: #5b5048; }
 .search-module-input:focus {
   background-color: #f8f8f8; }
