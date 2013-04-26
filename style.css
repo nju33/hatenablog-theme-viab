@@ -186,10 +186,11 @@ body {
   top: -10em; }
 .page-index #blog-title-inner {
   margin: 0 1em;
-  position: fixed;
+  position: fixed !important;
   top: 10.3em;
   width: 180px;
-  z-index: 1; }
+  z-index: 1;
+  height: auto !important; }
 
 .page-entry #blog-title-inner, [class^="page-a"] #blog-title-inner {
   width: 960px;
@@ -241,6 +242,20 @@ body {
 #blog-description {
   font-size: 0.85em;
   line-height: 1.5; }
+
+.header-image-enable #blog-title #title a, .header-image-enable #blog-title #blog-description {
+  color: inherit;
+  text-shadow: 0 0 0;
+  padding: 0 0.34em; }
+
+.header-image-enable.page-entry #title, .header-image-enable.page-entry #blog-description, .header-image-enable[class^="page-a"] #title, .header-image-enable[class^="page-a"] #blog-description {
+  position: relative;
+  top: 34%;
+  left: 2%;
+  width: 28.57143%; }
+
+.header-image-only #blog-title-inner {
+  min-height: 180px !important; }
 
 .page-index #wrapper {
   display: block;
